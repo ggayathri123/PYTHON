@@ -1,1 +1,23 @@
-
+import tkinter as tk
+class Circle:
+    def init (self, x, y, radius, color='black'):
+        self.x = x
+        self.y = y
+        self.radius = radius
+        self.color = color
+        def draw_circle(canvas, circle):
+            x1 = circle.x - circle.radius
+            y1 = circle.y - circle.radius
+            x2 = circle.x + circle.radius
+            y2 = circle.y + circle.radius
+            canvas.create_oval(x1, y1, x2, y2, fill=circle.color)
+            # Example usage
+            root = tk.Tk()
+            canvas = tk.Canvas(root, width=400, height=400)
+            canvas.pack()
+            circle1 = Circle(100, 100, 50, 'red')
+            circle2 = Circle(200, 200, 70, 'blue')
+            circle3 = Circle(300, 300, 30, 'green')
+            draw_circle(canvas, circle1)
+            draw_circle(canvas, circle2)
+            root.mainloop()
