@@ -1,1 +1,12 @@
-
+print("Enter your name:",end="")
+name=input()
+print("Enter your address:",end="")
+address=input()
+print("Enter your email:",end="")
+email=input()
+print("Enter your phone number:",end="")
+phonenumber=input()
+print("Name:",name)
+print("address:",address)
+print("Email:",email)
+print("phonenumber:",phonenumber
