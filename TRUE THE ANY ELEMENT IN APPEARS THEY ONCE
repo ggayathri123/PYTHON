@@ -1,1 +1,8 @@
-
+def remove_dup(lst):
+    return list(set(lst))
+lst=[]
+n=int(input("Enter nof elements:"))
+for i in range(n):
+    ele=int(input())
+lst.append(ele)
+print(remove_dup(lst))
