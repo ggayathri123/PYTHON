@@ -1,1 +1,6 @@
-
+import re
+def convert_into_uppercase(a):
+    return a.group(1)+a.group(2).upper()
+s=input("enter an sentence or string:")
+result=re.sub("(^|\s)(\S)",convert_into_uppercase,s)
+print(result)
