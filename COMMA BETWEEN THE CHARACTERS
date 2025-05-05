@@ -1,1 +1,3 @@
-
+word=input("Enter a word:")
+modified_word= ','.join(word)
+print(modified_word)
