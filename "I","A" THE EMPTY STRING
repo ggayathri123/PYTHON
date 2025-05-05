@@ -1,1 +1,13 @@
-
+def add_missing(wordlist):
+    if "I" not in wordlist:
+        wordlist.append("I")
+if "a" not in wordlist:
+    wordlist.append("a")
+if "" not in wordlist:
+    wordlist.append(" ")
+    wordlist
+with open("words.txt","r") as file:
+    wordlist = file.read().splitlines()
+wordlist=add_missing(wordlist)
+for word in wordlist:
+    print(word)
